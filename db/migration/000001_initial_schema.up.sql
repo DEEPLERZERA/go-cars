@@ -1,5 +1,5 @@
 CREATE TABLE "cars" (
-    "id" integer PRIMARY KEY NOT NULL,
+    "id" serial PRIMARY KEY NOT NULL,
     "name" varchar NOT NULL,
     "price" integer NOT NULL,
     "brand" varchar NOT NULL,
