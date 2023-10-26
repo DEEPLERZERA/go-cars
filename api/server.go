@@ -15,6 +15,12 @@ func InstanceServer(store *db.ExecuteStore) *Server {
 	server := &Server{store: store}
 	router := gin.Default()
 
+	router.POST("/cars", server.createCar)
+	router.GET("/cars/:id", server.getCar)
+	router.GET("/cars", server.getCars)
+	router.PUT("/cars", server.updateCar)
+	router.DELETE("/cars/:id", server.deleteCar)
+
 	server.router = router
 	return server
 }
