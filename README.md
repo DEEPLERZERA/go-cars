@@ -13,3 +13,10 @@ In this project you can work with the following fields:
 
 ## Here you can see the project specifications
 
+
+**Programming Language:** GO
+
+**Database:** DBeaver/PostgreSQL
+
+**Test Program:** Postman
+
