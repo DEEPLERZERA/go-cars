@@ -35,6 +35,14 @@ In this project you can work with the following fields:
 
 ![image](https://github.com/DEEPLERZERA/go-cars/assets/73613620/0e0e9c3d-eb13-48b6-b35f-dd4ff1496450)
 
+## Consulting the car
+
+![image](https://github.com/DEEPLERZERA/go-cars/assets/73613620/2eca017c-a213-41ad-ab10-bc4ef54d488d)
+
+![image](https://github.com/DEEPLERZERA/go-cars/assets/73613620/f6fa1f9a-b1f1-4ebd-87c0-9266862d974a)
+
+
+
 
 
 
