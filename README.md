@@ -11,5 +11,5 @@ In this project you can work with the following fields:
 
 **brand** ™
 
-## 
+## Here you can see the project specifications
 
