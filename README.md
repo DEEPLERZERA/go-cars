@@ -56,6 +56,15 @@ In this project you can work with the following fields:
 ![image](https://github.com/DEEPLERZERA/go-cars/assets/73613620/90e616bc-c9ff-41ac-8e56-682fc80d881c)
 
 
+## Deleting a car
+
+
+![image](https://github.com/DEEPLERZERA/go-cars/assets/73613620/c2c5165c-c62c-4844-ba34-b69830abb320)
+![image](https://github.com/DEEPLERZERA/go-cars/assets/73613620/96225c81-a69f-4fcf-9238-a0ccabe644f2)
+
+
+
+
 
 
 
