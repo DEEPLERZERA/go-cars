@@ -5,7 +5,7 @@ This project basically allows the user to manage a large mass of data about cars
 
 In this project you can work with the following fields:
 
-**name** &&nbsp
+**name** 
 **price**
 **brand**
 
