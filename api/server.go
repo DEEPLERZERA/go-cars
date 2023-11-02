@@ -18,7 +18,7 @@ func InstanceServer(store *db.ExecuteStore) *Server {
 	router.POST("/cars", server.createCar)
 	router.GET("/cars/:id", server.getCar)
 	router.GET("/cars", server.getCars)
-	router.PUT("/cars", server.updateCar)
+	router.PUT("/cars/:id", server.updateCar)
 	router.DELETE("/cars/:id", server.deleteCar)
 
 	server.router = router

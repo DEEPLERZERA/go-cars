@@ -2,6 +2,7 @@ package api
 
 import (
 	"net/http"
+	"strconv"
 
 	db "github.com/DEEPLERZERA/go-cars/db/sqlc"
 	"github.com/gin-gonic/gin"
@@ -77,13 +78,19 @@ func (server *Server) deleteCar(ctx *gin.Context) {
 }
 
 type updateCarRequest struct {
-	ID    int32  `json:"id" binding:"required"`
+	ID    int32  `json:"id"`
 	Name  string `json:"name"`
 	Price int32  `json:"price"`
 	Brand string `json:"brand"`
 }
 
 func (server *Server) updateCar(ctx *gin.Context) {
+	id, err := strconv.Atoi(ctx.Param("id"))
+	if err != nil {
+		ctx.JSON(http.StatusBadRequest, errorResponse(err))
+		return
+	}
+
 	var req updateCarRequest
 	if err := ctx.ShouldBindJSON(&req); err != nil {
 		ctx.JSON(http.StatusBadRequest, errorResponse(err))
@@ -91,7 +98,7 @@ func (server *Server) updateCar(ctx *gin.Context) {
 	}
 
 	arg := db.UpdateCarParams{
-		ID:    req.ID,
+		ID:    int32(id),
 		Name:  req.Name,
 		Price: req.Price,
 		Brand: req.Brand,
