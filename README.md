@@ -27,4 +27,16 @@ In this project you can work with the following fields:
 
 ![image](https://github.com/DEEPLERZERA/go-cars/assets/73613620/fd16157f-50b6-4314-b909-c621e4303bd0)
 
+## Creating a new car
+
+![image](https://github.com/DEEPLERZERA/go-cars/assets/73613620/77430f01-2d7f-410f-82be-ef17e99f15a2)
+
+![image](https://github.com/DEEPLERZERA/go-cars/assets/73613620/a133f940-21c2-46d7-ab5c-ec63f8df5ce5)
+
+![image](https://github.com/DEEPLERZERA/go-cars/assets/73613620/0e0e9c3d-eb13-48b6-b35f-dd4ff1496450)
+
+
+
+
+
 
