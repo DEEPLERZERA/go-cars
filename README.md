@@ -53,7 +53,8 @@ In this project you can work with the following fields:
 
 ![image](https://github.com/DEEPLERZERA/go-cars/assets/73613620/d866edac-6e33-43f5-a9bc-fc0d83bb3660)
 ![image](https://github.com/DEEPLERZERA/go-cars/assets/73613620/67e5233b-0217-41ad-a28a-f03a2f7215b9)
-![image](https://github.com/DEEPLERZERA/go-cars/assets/73613620/c61db397-fd11-4948-b241-83712247c65d)
+![image](https://github.com/DEEPLERZERA/go-cars/assets/73613620/90e616bc-c9ff-41ac-8e56-682fc80d881c)
+
 
 
 
