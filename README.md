@@ -68,6 +68,10 @@ In this project you can work with the following fields:
 
 This project is a basic CRUD in GO, which provides simple car inventory management
 
+## Feel free to take a look at our documentation
+
+**Link to PDF**: https://drive.google.com/file/d/1wvnDbi1rNnpwA3_zY11lj898KxpNqrmu/view?usp=sharing 
+
 
 
 
