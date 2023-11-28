@@ -72,7 +72,7 @@ This project is a basic CRUD in GO, which provides simple car inventory manageme
 
 **Link to PDF**: https://drive.google.com/file/d/1wvnDbi1rNnpwA3_zY11lj898KxpNqrmu/view?usp=sharing 
 
-## Explanation of the project in the video
+## Explanation of the project in the video ▶️
 
 **Link to youtube video**: https://www.youtube.com/watch?v=8U1WaiPrneU&t=513s
 
