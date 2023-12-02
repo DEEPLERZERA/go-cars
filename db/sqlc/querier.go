@@ -4,6 +4,7 @@ import (
 	"context"
 )
 
+//Querys to the database interface
 type Querier interface {
 	CreateCar(ctx context.Context, arg CreateCarParams) (Car, error)
 	DeleteCar(ctx context.Context, id int32) error 

@@ -9,12 +9,14 @@ import (
 	_ "github.com/lib/pq"
 )
 
+//Configuring the database
 const (
 	dbDriver      = "postgres"
 	dbSource      = "postgresql://postgres:postgres@localhost:5432/go_cars5?sslmode=disable"
 	serverAddress = "0.0.0.0:8000"
 )
 
+//Main function
 func main() {
 	conn, err := sql.Open(dbDriver, dbSource)
 	if err != nil {

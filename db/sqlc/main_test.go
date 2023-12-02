@@ -16,6 +16,7 @@ const(
 
 var testQueries *Queries
 
+//Test the main function
 func TestMain(m *testing.M) {
 	conn, err := sql.Open(dbDriver, dbSource)
 	if err != nil {

@@ -4,6 +4,7 @@ import (
 	"context"
 )
 
+//Querys to the database
 const createCar = `-- name: CreateCar :one
 INSERT INTO cars (
 	name,

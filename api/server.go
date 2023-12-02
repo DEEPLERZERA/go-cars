@@ -11,6 +11,7 @@ type Server struct {
 	router *gin.Engine
 }
 
+//Creating routes
 func InstanceServer(store *db.ExecuteStore) *Server {
 	server := &Server{store: store}
 	router := gin.Default()

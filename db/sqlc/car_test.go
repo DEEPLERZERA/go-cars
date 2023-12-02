@@ -7,6 +7,7 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
+//Test the creation of a car
 func createRandomCar(t *testing.T) Car {
 	arg := CreateCarParams{
 		Name:  "BMW X5",
@@ -34,6 +35,7 @@ func TestCreateCar(t *testing.T) {
 	createRandomCar(t)
 }
 
+//Test the search of a car
 func TestGetCar(t *testing.T) {
 	carRandomCreated := createRandomCar(t)
 	carFinded, err := testQueries.GetCar(context.Background(), carRandomCreated.ID)
@@ -49,6 +51,7 @@ func TestGetCar(t *testing.T) {
 	require.Equal(t, carRandomCreated.CreatedAt, carFinded.CreatedAt)
 }
 
+//Test the deletion of a car
 func TestDeleteCar(t *testing.T) {
 	carRandomCreated := createRandomCar(t)
 	err := testQueries.DeleteCar(context.Background(), carRandomCreated.ID)
@@ -56,6 +59,7 @@ func TestDeleteCar(t *testing.T) {
 	require.NoError(t, err)
 }
 
+//Test the update of a car
 func TestUpdateCar(t *testing.T) {
 	carRandomCreated := createRandomCar(t)
 
@@ -78,6 +82,7 @@ func TestUpdateCar(t *testing.T) {
 	require.Equal(t, carRandomCreated.CreatedAt, carUpdated.CreatedAt)
 }
 
+//Test the search of all cars
 func TestGetCars(t *testing.T) {
 	carRandomCreated := createRandomCar(t)
 	carsFinded, err := testQueries.GetCars(context.Background())

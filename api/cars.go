@@ -14,6 +14,7 @@ type createCarRequest struct {
 	Brand string `json:"brand" binding:"required"`
 }
 
+//Creating a car
 func (server *Server) createCar(ctx *gin.Context) {
 	var req createCarRequest
 	if err := ctx.ShouldBindJSON(&req); err != nil {
@@ -40,6 +41,7 @@ type getCarRequest struct {
 	ID int32 `uri:"id" binding:"required"`
 }
 
+//Getting a car
 func (server *Server) getCar(ctx *gin.Context) {
 	var req getCarRequest
 	if err := ctx.ShouldBindUri(&req); err != nil {
@@ -60,6 +62,7 @@ type deleteCarRequest struct {
 	ID int32 `uri:"id" binding:"required"`
 }
 
+//Deleting a car
 func (server *Server) deleteCar(ctx *gin.Context) {
 	var req deleteCarRequest
 	err := ctx.ShouldBindUri(&req)
@@ -84,6 +87,7 @@ type updateCarRequest struct {
 	Brand string `json:"brand"`
 }
 
+//Updating a car	
 func (server *Server) updateCar(ctx *gin.Context) {
 	id, err := strconv.Atoi(ctx.Param("id"))
 	if err != nil {
@@ -113,6 +117,7 @@ func (server *Server) updateCar(ctx *gin.Context) {
 	ctx.JSON(http.StatusOK, car)
 }
 
+//Getting all cars
 func (server *Server) getCars(ctx *gin.Context) {
 	cars, err := server.store.GetCars(ctx)
 	if err != nil {

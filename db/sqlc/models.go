@@ -4,6 +4,7 @@ import (
 	"time"
 )
 
+//Car model
 type Car struct {
 	ID        int32     `json:"id"`
 	Name      string    `json:"name"`
